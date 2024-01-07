@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <style>
+       /* Define a class for the styled text */
+       .bold-text {
+           font-family: Arial, sans-serif; /* Change the font family as needed */
+           font-weight: bold; /* Make the text bold */
+           font-style: italic; /* Apply italic style */
+           /* You can add more styles such as color, font-size, etc., as needed */
+       }
+   </style>
+</head>
+<body>
+    <h2>{{user_profile.name}}</h2>
+    <h2>{{user_profile.email}}</h2>
+    <h2>{{user_profile.phone}}</h2>
+    <hr/>
+    <br/>
+    <p class="bold-text">Summary</p>
+    <p class="bold-text">{{user_profile.summary}}</p>
+    <hr/>
+    <br/>
+    <p class="bold-text">Skills</p>
+    <p class="bold-text">{{user_profile.skills}}</p>
+    <hr/>
+    <p class="bold-text">Education</p>
+    <ul>
+        <li class="bold-text">Schooling: {{user_profile.school}}</li>
+        <li class="bold-text">{{user_profile.degree}} from {{user_profile.university}}</li>
+    </ul>
+    <hr/>
+    <p class="bold-text">Previous Work</p>
+    <p class="bold-text">{{user_profile.previous_work}}</p>
+</body>
+</html>
